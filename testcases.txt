@@ -1,0 +1,32 @@
+Scenario 1: User successfully logs into respective gmail account
+GIVEN Nature Save has a valid gmail account
+WHEN he enters all the required registration information
+AND he hits ‘Next’
+THEN his Gmail account opens
+
+Scenario 2: User successfuly opens frame to compose mail
+GIVEN Compose button is visible on the gmail account page
+WHEN On clicking the "compose" button a frame to compose a mail gets displayed
+
+Scenario 3: User successfully enters Receipients mail id
+GIVEN : User successfuly opens frame to compose mail
+WHEN:  Types in receipients mail id
+AND: hits ENTERS
+THEN: receives no error
+
+Scenario 4: User successfully enters Subject 
+GIVEN : User successfuly opens frame to compose mail
+WHEN:  Types in subject "Incubyte"
+AND: hits ENTERS
+THEN: receives no error
+
+Scenario 4: User successfully enters Message Body
+GIVEN : User successfuly opens frame to compose mail
+WHEN:  Types in Message Body "Automation QA test for Incubyte"
+THEN: receives no error
+
+Scenario 5: User successfully sends the mail
+GIVEN :  Frame to compose mailhas been filled with needed details
+WHEN:  Clicks "Send" button
+THEN:    Sees message sent successfully message
+
